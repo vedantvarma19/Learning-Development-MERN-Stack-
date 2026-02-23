@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Default: Mobile First */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 30%;
+    }
+}
+
+/* I learned how to make layouts adapt to different screen sizes.
+Mobile-first design ensures better scalability. */ 
+
+/* Responsive design is mandatory for:
+- Production websites
+- Client projects
+- Professional UI systems /* 
