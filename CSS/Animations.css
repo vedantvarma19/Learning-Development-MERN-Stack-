@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 60px;
+}
+
+/* Transition Example */
+.animated-btn {
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated-btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 40px auto;
+    animation: slide 3s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+/* ## What I Learned
+
+I learned how to add interactive motion effects to UI components.
+ */ 
+
+ /* Animations improve:
+- User experience
+- Visual feedback
+- Modern UI aesthetics */ 
