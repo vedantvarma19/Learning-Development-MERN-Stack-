@@ -8,6 +8,7 @@ let tasks = [];
 
 // Function to render tasks on screen
 function renderTasks() {
+    
     // Clear existing list
     taskList.innerHTML = "";
 
